@@ -1,0 +1,96 @@
+# =========================
+# Python cache
+# =========================
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# Jupyter cache
+# =========================
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# =========================
+# Build / install artifacts
+# =========================
+build/
+**/build/
+dist/
+**/dist/
+*.egg-info/
+**/*.egg-info/
+.eggs/
+*.egg
+
+# Compiled extension / object files
+*.so
+*.pyd
+*.dll
+*.o
+*.obj
+
+# =========================
+# Virtual environments
+# =========================
+venv/
+env/
+.venv/
+ENV/
+conda_env/
+
+# =========================
+# Model checkpoints / weights
+# =========================
+*.pth
+*.pt
+*.ckpt
+*.pkl
+checkpoints/
+weights/
+
+# =========================
+# Logs and experiment outputs
+# =========================
+runs/
+logs/
+output/
+outputs/
+results/
+inference_results/
+exps/
+*.log
+
+# =========================
+# Large cryo-EM / annotation data files
+# 注意：这里只忽略数据文件，不忽略 datasets/ 源码目录
+# =========================
+data/
+micrographs/
+annots/
+annotations/
+*.mrc
+*.mrcs
+*.star
+*.box
+*.eer
+*.tif
+*.tiff
+*.csv
+
+# =========================
+# OS / IDE files
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+*.tmp
+*.bak

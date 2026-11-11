@@ -10,6 +10,8 @@
 将 `visualize_heatmap.py` 放在仓库根目录，同时使用本分支的
 `models/CryoDETR/backbone.py`。后者增加 `pretrained_backbone` 开关，绘图加载
 完整检查点时关闭 ImageNet 权重下载。该开关的默认值仍为 `True`。
+如果服务器上的 `backbone.py` 已改过返回层或通道数，只合入本次预训练开关的几行改动，
+保留与训练检查点一致的层和通道设置。以 `strict=True` 加载通过为前提。
 
 使用已经能够训练 CryoDETR 的环境及其编译好的 `MultiScaleDeformableAttention`。
 脚本直接使用 `models/CryoDETR` 中的模型类，并从 checkpoint 的 `args` 恢复训练配置。
